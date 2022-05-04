@@ -9,5 +9,6 @@ if (numero1 <= numero2) {
   for (let indice2: number = numero2; indice2 <= numero1; indice2++) {
     suma += indice2;
   }
-  console.log("su resultado es", suma);
 }
+
+console.log("su resultado es", suma);
