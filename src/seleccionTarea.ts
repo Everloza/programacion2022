@@ -1,4 +1,4 @@
-let sueldoActual: number = prompt("sueldo actual");
+let sueldoActual: number = Number(prompt("sueldo actual"));
 let nuevoSueldo: number = 0;
 
 switch (true) {
