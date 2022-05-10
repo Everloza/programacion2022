@@ -10,7 +10,7 @@ while (numero !== 0) {
     //pregunto si el numero es positivo
     positivo++; //cuenta la cantidad de numeros positivos
   }
-  numero++; //cuenta la cantidad de numeros en total
+
   numero = Number(prompt("ingresar un numero: ")); //ingresar nuevo numero
   if (porcentaje > 0) {
     //pregunto si el porcentaje es mayor a 0
