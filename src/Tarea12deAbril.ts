@@ -1,12 +1,12 @@
-let numero1: number = Number(prompt("ingrese primer numero: ")); //declaro las sumas
-let numero2: number = Number(prompt("ingrese segundo numero: ")); //declaro las restas
-let numero3: number = Number(prompt("ingrese tercer numero: ")); //declaro las multiplicaciones
-let numero4: number = Number(prompt("ingrese cuarto numero: ")); //declaro las divisiones
+let numero1: number = Number(prompt("Ingrese primer numero: ")); //declaro primer valor
+let numero2: number = Number(prompt("Ingrese segundo numero: ")); //declaro segundo valor
+let numero3: number = Number(prompt("Ingrese tercer numero: ")); //declaro tercer valor
+let numero4: number = Number(prompt("Ingrese cuarto numero: ")); //declaro cuarto valor
 let opcion: number = Number(
   prompt(
     "ingrese 1 para sumar, 2 para restar, 3 para multiplicar, 4 para dividir: "
   )
-); //declaro las opciones
+); //declaro las opciones de operacion
 
 function DibujarLineas() {
   //declaro la funcion dibujarlineas, que luego las utilizo en cada operacion
@@ -19,8 +19,13 @@ function DibujarLineas() {
 DibujarLineas(); // Resultado de la funcion
 
 switch (opcion) {
-  case 1:
-    resultado = numero1 + numero2 + numero3 + numero4;
-    Dibujarlineas();
+  case 1: //suma
     break;
+  case 2: //resta
+    break;
+  case 3: //multiplicacion
+    break;
+  case 4: //division
+    break;
+  default: //cierre
 }
