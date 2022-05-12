@@ -13,7 +13,9 @@ function DibujarLineas() {
     //utilizo un contador para las lineas (hasta 40 lineas)
     linea = linea + "-"; //sumo la variable linea con el string
   }
+  console.log(DibujarLineas);
 }
+
 DibujarLineas(); // Resultado de la funcion
 
 switch (opcion) {
