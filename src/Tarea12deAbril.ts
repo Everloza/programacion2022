@@ -1,7 +1,5 @@
 let numero1: number = Number(prompt("Ingrese primer numero: ")); //declaro primer valor
 let numero2: number = Number(prompt("Ingrese segundo numero: ")); //declaro segundo valor
-let numero3: number = Number(prompt("Ingrese tercer numero: ")); //declaro tercer valor
-let numero4: number = Number(prompt("Ingrese cuarto numero: ")); //declaro cuarto valor
 let opcion: number = Number(
   prompt(
     "ingrese 1 para sumar, 2 para restar, 3 para multiplicar, 4 para dividir: "
