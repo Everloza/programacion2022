@@ -13,19 +13,29 @@ function DibujarLineas() {
     //utilizo un contador para las lineas (hasta 40 lineas)
     linea = linea + "-"; //sumo la variable linea con el string
   }
-  console.log(DibujarLineas);
+  console.log(linea);
 }
-
-DibujarLineas(); // Resultado de la funcion
 
 switch (opcion) {
   case 1: //suma
+    DibujarLineas();
+    console.log("el resultado es: ", numero1 + numero2);
+    DibujarLineas();
     break;
   case 2: //resta
+    DibujarLineas();
+    console.log("el resultado es: ", numero1 - numero2);
+    DibujarLineas();
     break;
   case 3: //multiplicacion
+    DibujarLineas();
+    console.log("el resultado es: ", numero1 * numero2);
+    DibujarLineas();
     break;
   case 4: //division
+    DibujarLineas();
+    console.log("el resultado es: ", numero1 / numero2);
+    DibujarLineas();
     break;
   default: //cierre
 }
