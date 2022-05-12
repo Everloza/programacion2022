@@ -15,6 +15,6 @@ while (numero !== 0) {
   if (porcentaje > 0) {
     //pregunto si el porcentaje es mayor a 0
     porcentaje = (positivo / numero) * 100; //calculo el porcentaje
-    console.log("el porcentaje de positivos es: ", porcentaje);
+    console.log("el porcentaje de positivos es: ", porcentaje, positivo);
   }
 }
