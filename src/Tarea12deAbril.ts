@@ -6,7 +6,7 @@ let opcion: number = Number(
   )
 ); //declaro las opciones de operacion
 
-function DibujarLineas() {
+function dibujarLineas() {
   //declaro la funcion dibujarlineas, que luego las utilizo en cada operacion
   let linea = "-"; //declaro linea en string
   for (let i: number = 0; i <= 40; i++) {
@@ -18,24 +18,24 @@ function DibujarLineas() {
 
 switch (opcion) {
   case 1: //suma
-    DibujarLineas(); //funcion linea
+    dibujarLineas(); //funcion linea
     console.log("el resultado es: ", numero1 + numero2); //imprimo suma
-    DibujarLineas();
+    dibujarLineas();
     break;
   case 2: //resta
-    DibujarLineas();
+    dibujarLineas();
     console.log("el resultado es: ", numero1 - numero2); //imprimo resta
-    DibujarLineas();
+    dibujarLineas();
     break;
   case 3: //multiplicacion
-    DibujarLineas();
+    dibujarLineas();
     console.log("el resultado es: ", numero1 * numero2); //imprimo multiplicacion
-    DibujarLineas();
+    dibujarLineas();
     break;
   case 4: //division
-    DibujarLineas();
+    dibujarLineas();
     console.log("el resultado es: ", numero1 / numero2); //imprimo division
-    DibujarLineas();
+    dibujarLineas();
     break;
   default: //cierre
 }
