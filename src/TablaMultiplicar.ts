@@ -1,7 +1,7 @@
 let numero: number = Number(prompt("ingrese numero a multiplicar: "));
-//declaro -numero- para ingresar a la consola.
+//declaro -numero- para ingresar a la consola de mensaje.
 let tope: number = Number(prompt("ingrese el tope para el multiplo: "));
-//declaro -tope-, que seria un limite para cada multipliacion.
+//declaro -tope-, que seria un limite para cada multipliacion hacia la consola de mensaje.
 
 for (let indice: number = 0; indice <= tope; indice++) {
   //el for para repeticion declara la variable -indice- de tipo numero igual a 0,
