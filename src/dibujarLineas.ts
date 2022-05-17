@@ -6,7 +6,6 @@ function dibujarLinea(numero: Number): string {
   return linea;
 }
 
-for (let indice: number = 1; indice < 10; indice++) {
-  let linea: string = dibujarLinea(indice);
-  console.log(linea);
+for (let indice: number = 1; indice <= 10; indice++) {
+  console.log(dibujarLinea(indice));
 }
