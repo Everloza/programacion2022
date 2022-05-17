@@ -6,13 +6,19 @@ function esMultiplo(dividendo: number, divisor: number): boolean {
   }
 }
 
-let numero1: number = Number(prompt("ingrese numero 1"));
-let numero2: number = Number(prompt("ingrese numero 2"));
+let numero: number = 0;
+let numDivisores: number = cantidadDeDivisores(numero);
 
-let multiplo: boolean = esMultiplo(numero1, numero2);
+console.log("el numero", numero, "tiene", numDivisores, "divisores.");
 
-if (multiplo === true) {
-  console.log("el numero " + numero1 + " es multiplo de " + numero2);
-} else {
-  console.log("el numero " + numero1 + " no es multiplo de " + numero2);
+function cantidadDeDivisores(numero: number): number {
+  let cantidad: number = 0;
+  let divisor: number;
+
+  for (divisor = 0; divisor < numero; divisor++) {
+    if (esMultiplo(numero, divisor)) {
+      cantidad++;
+    }
+    return cantidad;
+  }
 }
