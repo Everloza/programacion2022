@@ -6,9 +6,9 @@
 // d) O cualquier otro procedimiento que el alumno desee
 // (Mínimo 10 instrucciones)
 
-console.log("-----------------------");
+console.log("------------------------------------------------");
 console.log("¿Como Cocinar una torta?");
-console.log("-----------------------");
+console.log("------------------------------------------------");
 console.log(
   "Paso 1: Comenzar con la mantequilla y el azúcar. Mezcla ambas y bátelas hasta conseguir una crema color blanquecino."
 );
@@ -33,7 +33,7 @@ console.log(
   "paso 9: Ahora, en un molde previamente untado de mantequilla, coloca la mezcla y llévala al horno durante 40 minutos, a 180 ºC."
 );
 console.log(
-  "paso 10:Para terminar la torta clásica de vainilla solo te queda sacarla del horno y esperar a que enfríe a temperatura ambiente para desmoldarla. Este bizcocho casero podrás disfrutarlo así solo, sin más. Si te animas con la repostería, puedes decorarlo espolvoreando el tope con azúcar glass, hacer un relleno con frosting de chocolate o darle un motivo especial con fondant de azúcar."
+  "paso 10: Para terminar la torta clásica de vainilla solo te queda sacarla del horno y esperar a que enfríe a temperatura ambiente para desmoldarla. Este bizcocho casero podrás disfrutarlo así solo, sin más. Si te animas con la repostería, puedes decorarlo espolvoreando el tope con azúcar glass, hacer un relleno con frosting de chocolate o darle un motivo especial con fondant de azúcar."
 );
 console.log("Fin");
 
