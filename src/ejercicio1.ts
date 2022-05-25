@@ -38,7 +38,7 @@ console.log(
 console.log("Fin");
 */
 
-console.log(5 * 10); //imprime una multiplicacion en la consola.
+/* console.log(5 * 10); //imprime una multiplicacion en la consola.
 
 let numero_1: number = 3; //declara la primera variable de tipo numero igual a 3.
 let numero_2: number = 2; //declara la segunda variable de tipo numero igual a 2.
@@ -46,3 +46,12 @@ let numero_2: number = 2; //declara la segunda variable de tipo numero igual a 2
 let resultado: number = numero_1 + numero_2;
 //declara la variable -resultado- de tipo numero igual a la suma de las dos anteriores variables 3 y 2.
 console.log(resultado); //imprime la variable -resultado-.
+*/
+
+let base: number = Number(prompt("ingrese la base: "));
+let altura: number = Number(prompt("ingrese la altura: "));
+let area: number = base * altura;
+
+console.log("el primer numero es:", base);
+console.log("el segundo numero es:", altura);
+console.log("el area es:", area);
