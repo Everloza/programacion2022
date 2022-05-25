@@ -1,3 +1,10 @@
+/* Clase 14 - Modularizacion y funciones 1era Parte - Modularización - Implementar una Calculadora
+
+Realizar el ejercicio de la calculadora con 4 operaciones (suma, resta, multiplicacion y division)
+ utilizando Switch y la funcion dibujarLineas que veniamos usando. 
+
+*/
+
 let numero1: number = Number(prompt("Ingrese primer numero: ")); //declaro primer valor.
 let numero2: number = Number(prompt("Ingrese segundo numero: ")); //declaro segundo valor.
 let opcion: number = Number(
