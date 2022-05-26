@@ -7,20 +7,21 @@ Realizar el ejercicio de la calculadora con 4 operaciones (suma, resta, multipli
 
 let numero1: number = Number(prompt("Ingrese primer numero: ")); //declaro primer valor.
 let numero2: number = Number(prompt("Ingrese segundo numero: ")); //declaro segundo valor.
+//declaro las opciones de operacion.
 let opcion: number = Number(
   prompt(
     "ingrese 1 para sumar, 2 para restar, 3 para multiplicar, 4 para dividir: "
   )
-); //declaro las opciones de operacion.
+);
 
 function dibujarLineas() {
-  //declaro la funcion dibujarlineas, que luego las utilizo en cada operacion.
-  let linea = "-"; //declaro linea en string.
+  //declaro la funcion --dibujarlineas--, que luego las utilizo en cada operacion.
+  let linea = "-"; //declaro -linea- en string ("-").
   for (let i: number = 0; i <= 40; i++) {
     //utilizo un contador para las lineas (hasta 40 lineas).
-    linea = linea + "-"; //sumo la variable linea con el string.
+    linea = linea + "-"; //sumo la variable -linea- con el string.
   }
-  console.log(linea); //imprimo la linea.
+  console.log(linea); //imprimo -linea-.
 }
 
 //declaro -opcion- dentro del switch.
