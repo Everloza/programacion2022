@@ -21,7 +21,27 @@ Actividad (Sumar dos Arreglos)
 
 Ejemplo:
 v1 =        1, 3, 7, 9, 9, 5 
-v2 =        6, 9, 2, 5, 9, 4vSuma =    7, 12, 9, 14, 18, 9
+v2 =        6, 9, 2, 5, 9, 4
+vSuma =    7, 12, 9, 14, 18, 9
 
 Nro Filimina: 54.
 */
+
+let v1: number[] = new Array(6); //Declaro el arreglo 1.
+let v2: number[] = new Array(6); //Declaro el arreglo 2.
+let vSuma: number[] = new Array(6); //Declaro suma de los vectores.
+let indice: number; //Declaro -indice-.
+
+//Cargo el vector v1.
+for (indice = 0; indice < 6; indice++) {
+  v1[indice] = Number(prompt(`Ingrese el valor de v1 [ ${indice} ]`));
+}
+//Cargo el vector v2.
+for (indice = 0; indice < 6; indice++) {
+  v2[indice] = Number(prompt(`Ingrese el valor de v2 [ ${indice} ]`));
+}
+//Sumo los valores y muestro.
+for (indice = 0; indice < 6; indice++) {
+  vSuma[indice] = v1[indice] + v2[indice];
+  console.log(`vSuma[ ${indice} ] = ${vSuma[indice]}`);
+}
