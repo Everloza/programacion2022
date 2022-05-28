@@ -27,8 +27,13 @@ Nro Filimina: 64
 
 */
 
+let arrayAlumnos:string[]=new Array(10);
+let arrayNota1 :number[]=new Array(10);
+let arrayNota2 :number[]=new Array(10);
+let arrayNota3 :number[]=new Array(10);
+
 function obtenerPromedioAlumno(indice:number):number{
-    let suma=(arrayNota1[indice])+arrayNota2[indice]+arrayNota3[indice])
+    let suma=(arrayNota1[indice])+arrayNota2[indice]+arrayNota3[indice]);
     return suma;
 }
 function ObtenerPosicion(alumno:string):number{
@@ -49,10 +54,6 @@ function cargarNotasDeAlumno(){
         arrayNota3[indice]=Number(prompt('Ingrese nota 3: '));
     }
 }
-let arrayAlumnos:string[]=new Array(10);
-let arrayNota1 :number[]=new Array(10);
-let arrayNota2 :number[]=new Array(10);
-let arrayNota3 :number[]=new Array(10);
 
 cargarNotasDeAlumno();
 let alumno: string = (prompt('Ingrese Alumno'));
