@@ -27,41 +27,37 @@ Nro Filimina: 64
 
 */
 
-
-let numAlum : number = Number(prompt("Ingrese el numero de alumnos: "));
-let alumnos : string[] = new Array(numAlum);
-let nota1 : number[] = new Array(numAlum);
-let nota2 : number[] = new Array(numAlum);
-let nota3 : number[] = new Array(numAlum);
-let indice : number;
-
-for (indice = 0; indice < numAlum; indice++) {
-let alumnos[indice] : number = Number(prompt("Nombre del alumno: "));
-let nota1[indice] : number = Number(prompt("Nota del 1er trimestre:"));
-let nota2[indice] : number = Number(prompt("Nota del 2do trimestre:"));
-let nota3[indice] : number = Number(prompt("Nota del 3er trimestre:"));
+function obtenerPromedioAlumno(indice:number):number{
+    let suma=(arrayNota1[indice])+arrayNota2[indice]+arrayNota3[indice])
+    return suma;
 }
-
-console.log("Nombre del alumno: ", alumnos);
-console.log("Nota del 1er trimestre:: ", nota1);
-console.log("Nota del 2do trimestre:: ", nota2);
-console.log("Nota del 3er trimestre:: ", nota3);
-
-let alumBuscado : string;
-let encontrado : boolean = false;
-let promedio : number = 0;
-indice = 0;
-
-while (indice < numAlum && !encontrado) {
-    if (alumnos[indice] === alumBuscado) {
-       encontrado = true;
-        promedio = nota1[indice] + nota2[indice] + nota3[indice]; 
-        promedio /= 3;
+function ObtenerPosicion(alumno:string):number{
+    let posicion :number=-1;
+    for(let indice:number=0;indice<3;indice++){
+        if(arrayAlumnos[indice]===alumno){
+            posicion=indice;
+        }
     }
-indice++;
+    return posicion;
 }
-if (encontrado) {
-console.log("El promedio de ", alumBuscado, " es ", promedio);
-} else {
-console.log("No se pudo encontrar a ", alumBuscado);
+
+function cargarNotasDeAlumno(){
+    for(let indice:number=0;indice<2;indice++){
+        arrayAlumnos[indice]=(prompt('Ingrese Alumno: '));
+        arrayNota1[indice]=Number(prompt('Ingrese nota 1: '));
+        arrayNota2[indice]=Number(prompt('Ingrese nota 2: '));
+        arrayNota3[indice]=Number(prompt('Ingrese nota 3: '));
+    }
+}
+let arrayAlumnos:string[]=new Array(10);
+let arrayNota1 :number[]=new Array(10);
+let arrayNota2 :number[]=new Array(10);
+let arrayNota3 :number[]=new Array(10);
+
+cargarNotasDeAlumno();
+let alumno: string = (prompt('Ingrese Alumno'));
+if(ObtenerPosicion(alumno) === -1){
+    console.log('el alumno no existe');
+}else{
+    console.log(obtenerPromedioAlumno(ObtenerPosicion(alumno)));
 }
