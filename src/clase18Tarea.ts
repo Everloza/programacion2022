@@ -27,38 +27,38 @@ Nro Filimina: 64
 
 */
 
-let arrayAlumnos:string[]=new Array(10);
-let arrayNota1 :number[]=new Array(10);
-let arrayNota2 :number[]=new Array(10);
-let arrayNota3 :number[]=new Array(10);
+let arrayAlumnos: string[] = new Array(10);
+let arrayNota1: number[] = new Array(10);
+let arrayNota2: number[] = new Array(10);
+let arrayNota3: number[] = new Array(10);
 
-function obtenerPromedioAlumno(indice:number):number{
-    let suma=(arrayNota1[indice])+arrayNota2[indice]+arrayNota3[indice]);
-    return suma;
+function obtenerPromedioAlumno(indice: number): number {
+  let suma = arrayNota1[indice] + arrayNota2[indice] + arrayNota3[indice];
+  return suma;
 }
-function ObtenerPosicion(alumno:string):number{
-    let posicion :number=-1;
-    for(let indice:number=0;indice<3;indice++){
-        if(arrayAlumnos[indice]===alumno){
-            posicion=indice;
-        }
+function ObtenerPosicion(alumno: string): number {
+  let posicion: number = -1;
+  for (let indice: number = 0; indice < 3; indice++) {
+    if (arrayAlumnos[indice] === alumno) {
+      posicion = indice;
     }
-    return posicion;
+  }
+  return posicion;
 }
 
-function cargarNotasDeAlumno(){
-    for(let indice:number=0;indice<2;indice++){
-        arrayAlumnos[indice]=(prompt('Ingrese Alumno: '));
-        arrayNota1[indice]=Number(prompt('Ingrese nota 1: '));
-        arrayNota2[indice]=Number(prompt('Ingrese nota 2: '));
-        arrayNota3[indice]=Number(prompt('Ingrese nota 3: '));
-    }
+function cargarNotasDeAlumno() {
+  for (let indice: number = 0; indice < 2; indice++) {
+    arrayAlumnos[indice] = prompt("Ingrese Alumno: ");
+    arrayNota1[indice] = Number(prompt("Ingrese nota 1: "));
+    arrayNota2[indice] = Number(prompt("Ingrese nota 2: "));
+    arrayNota3[indice] = Number(prompt("Ingrese nota 3: "));
+  }
 }
 
 cargarNotasDeAlumno();
-let alumno: string = (prompt('Ingrese Alumno'));
-if(ObtenerPosicion(alumno) === -1){
-    console.log('el alumno no existe');
-}else{
-    console.log(obtenerPromedioAlumno(ObtenerPosicion(alumno)));
+let alumno: string = prompt("Ingrese Alumno");
+if (ObtenerPosicion(alumno) === -1) {
+  console.log("el alumno no existe");
+} else {
+  console.log(obtenerPromedioAlumno(ObtenerPosicion(alumno)));
 }
