@@ -9,9 +9,9 @@ Clase 9 - Algoritmos Secuenciales - Calculo de Descuento.
 
 */
 
-let precioInicial: number = Number(prompt("Ingrese el precio.")); //declaro la variable del precio inicial y lo muestra por cuadro de consola.
-let porcentajeDescuento: number = Number(0.1); //declaro la variable de tipo number para sacar el porcentaje.
-let descuento: number = Number(precioInicial * porcentajeDescuento); //declaro la variable del descuento, multiplico el precio inicial con el porcentaje.
-let precioFinal: number = precioInicial - descuento; //declaro -precioFinal- y resto el -precioInicial- con el -descuento-.
+let precioInicial: number = Number(prompt("Ingrese el precio.")); // Declaro la variable del precio inicial y lo muestra por cuadro de consola.
+let porcentajeDescuento: number = Number(0.1); // Declaro la variable de tipo number para sacar el porcentaje.
+let descuento: number = Number(precioInicial * porcentajeDescuento); // Declaro la variable del descuento, multiplico el precio inicial con el porcentaje.
+let precioFinal: number = Number(precioInicial - descuento); // Declaro -precioFinal- y resto el -precioInicial- con el -descuento-.
 
 console.log(precioFinal); //imprimo la variable -precioFinal- por la consola.

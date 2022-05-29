@@ -48,10 +48,11 @@ let resultado: number = numero_1 + numero_2;
 console.log(resultado); //imprime la variable -resultado-.
 */
 
-let base: number = Number(prompt("ingrese la base: "));
+let base: number = Number(prompt("ingrese la base: ")); // Declaro -base- de tipo numero y muestro un string en el cuadro.
 let altura: number = Number(prompt("ingrese la altura: "));
-let area: number = base * altura;
+let area: number = base * altura; // Declaro -area- de tipo numero igual a -base- por -altura-.
 
+// Muestro en la consola un string para -base-, -altura-, y para -area-.
 console.log("el primer numero es:", base);
 console.log("el segundo numero es:", altura);
 console.log("el area es:", area);

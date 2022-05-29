@@ -1,4 +1,5 @@
-/* Clase 18 - Arreglos y Funciones, 
+/* 
+Clase 18 - Arreglos y Funciones, 
 
 Visto
 - Repaso de arreglos
@@ -14,6 +15,7 @@ Trabajado
 
 Link a documentacion con metodos de manipular arreglos (solo para consulta, no para usar en este modulo)
 https://devcode.la/tutoriales/manejo-de-arrays-en-javascript/
+
 
 
 Actividad (Promedio Escolar)
