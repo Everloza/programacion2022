@@ -12,8 +12,8 @@ registrado para ese usuario. Tenga en cuenta que el sistema
 tiene registrado el usuario: Juan y la clave claveJuan
 */
 
-let user: string = prompt("Por favor, inserte un nombre de usuario:"); //asigno una variable -user- de tipo string para mostrar en el cuadro de consola.
-let pass: string = prompt("Inserte una contraseña:"); //asigno una variable -pass- de tipo string para mostrar en el cuadro de consola.
+let user: string = String(prompt("Por favor, inserte un nombre de usuario:")); //asigno una variable -user- de tipo string para mostrar en el cuadro de consola.
+let pass: string = String(prompt("Inserte una contraseña:")); //asigno una variable -pass- de tipo string para mostrar en el cuadro de consola.
 
 if (user === "Juan" && pass === "claveJuan") {
   //si -user- es igual a "Juan" AND -pass- es igual a "claveJuan" entonces.
