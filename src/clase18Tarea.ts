@@ -60,7 +60,7 @@ function cargarNotasDeAlumno() {
 cargarNotasDeAlumno();
 let alumno: string = prompt("Ingrese Alumno");
 if (ObtenerPosicion(alumno) === -1) {
-  console.log("el alumno no existe");
+  console.log("El alumno no existe");
 } else {
   console.log(obtenerPromedioAlumno(ObtenerPosicion(alumno)));
 }

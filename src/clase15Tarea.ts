@@ -32,7 +32,7 @@ function esMultiplo(numero1: number, numero2: number): boolean {
 function cantidadDeDivisores(numero: number): number {
   let cantidad: number = 0;
   let divisor: number;
-  for (divisor = 0; divisor < numero; divisor++) {
+  for (divisor = 0; divisor <= numero; divisor++) {
     if (esMultiplo(numero, divisor)) {
       cantidad++;
     }
