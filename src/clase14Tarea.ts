@@ -5,8 +5,8 @@ Realizar el ejercicio de la calculadora con 4 operaciones (suma, resta, multipli
 
 */
 
-let numero1: number = Number(prompt("Ingrese primer numero: ")); //declaro primer valor.
-let numero2: number = Number(prompt("Ingrese segundo numero: ")); //declaro segundo valor.
+let valor1: number = Number(prompt("Ingrese primer numero: ")); //declaro primer valor.
+let valor2: number = Number(prompt("Ingrese segundo numero: ")); //declaro segundo valor.
 //declaro las opciones de operacion.
 let opcion: number = Number(
   prompt(
@@ -28,22 +28,22 @@ function dibujarLineas() {
 switch (opcion) {
   case 1: //primero case para la suma.
     dibujarLineas(); //funcion de la linea implementada dentro de cada case.
-    console.log("el resultado es: ", numero1 + numero2); //imprimo el resultado de la suma de las dos variables.
+    console.log("el resultado es: ", valor1 + valor2); //imprimo el resultado de la suma de las dos variables.
     dibujarLineas();
     break; //cierro el case.
   case 2: //segundo case para la resta.
     dibujarLineas();
-    console.log("el resultado es: ", numero1 - numero2); //imprimo el resultado de la resta de las dos variables.
+    console.log("el resultado es: ", valor1 - valor2); //imprimo el resultado de la resta de las dos variables.
     dibujarLineas();
     break;
   case 3: //tercer caso para la multiplicacion.
     dibujarLineas(); //funcion de la linea implementada dentro de cada case.
-    console.log("el resultado es: ", numero1 * numero2); //imprimo el resultado de la mult. de las dos variables.
+    console.log("el resultado es: ", valor1 * valor2); //imprimo el resultado de la mult. de las dos variables.
     dibujarLineas();
     break;
   case 4: //cuarto case para la division.
     dibujarLineas();
-    console.log("el resultado es: ", numero1 / numero2); //imprimo el resultado de la div. de las dos variables.
+    console.log("el resultado es: ", valor1 / valor2); //imprimo el resultado de la div. de las dos variables.
     dibujarLineas();
     break;
   default: //cierre
