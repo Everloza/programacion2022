@@ -15,7 +15,6 @@ console.log(resultado);
 
 */
 
-/*
 // Operadores Relacionales
 let texto1: string = "hola";
 let texto2: string = "hola";
@@ -27,7 +26,6 @@ resultado = texto1 !== texto2; // resultado = false
 resultado = texto3 >= texto2; // resultado = false
 
 console.log(resultado);
-*/
 
 /* IMPORTANTE
 Cuando se utilizan cadenas de texto, los operadores "mayor que" (>) y "menor 
