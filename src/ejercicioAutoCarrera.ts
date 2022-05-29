@@ -9,13 +9,15 @@ por teclado el tiempo de cada vuelta.
 promedio de vuelta. 
 */
 
-let vuelta1: number = Number(prompt("Ingrese el tiempo de la primer vuelta:"));
-let vuelta2: number = Number(prompt("Ingrese el tiempo de la segunda vuelta:"));
-let vuelta3: number = Number(prompt("Ingrese el tiempo de la tercera vuelta:"));
-let vuelta4: number = Number(prompt("Ingrese el tiempo de la cuarta vuelta:"));
+// Las variables son de tipo: number = Number.
 
-let sumavuelta: number = Number(vuelta1 + vuelta2 + vuelta3 + vuelta4);
-let promediovuelta: number = Number(sumavuelta / 4);
+let vuelta1: number = Number(prompt("Ingrese el tiempo de la primera vuelta:")); // Declaro la variable -vuelta1- y lo ingreso por teclado.
+let vuelta2: number = Number(prompt("Ingrese el tiempo de la segunda vuelta:")); // Declaro la variable -vuelta2- y lo ingreso por teclado.
+let vuelta3: number = Number(prompt("Ingrese el tiempo de la tercera vuelta:")); // Declaro la variable -vuelta3- y lo ingreso por teclado.
+let vuelta4: number = Number(prompt("Ingrese el tiempo de la cuarta vuelta:")); // Declaro la variable -vuelta4- y lo ingreso por teclado.
 
-console.log("La suma de las vueltas son de:", sumavuelta);
-console.log("El promedio de vueltas son de:", promediovuelta);
+let sumavuelta: number = vuelta1 + vuelta2 + vuelta3 + vuelta4; // Declaro la variable -sumavuelta- tipo number y lo sumo con las vueltas1, 2, 3, 4.
+let promediovuelta: number = sumavuelta / 4; // Declaro la variable -promediovuelta- tipo number y calculo -sumavuelta- dividido 4.
+
+console.log("La suma de las vueltas son de:", sumavuelta); // Imprimo en la consola -sumavuelta-.
+console.log("El promedio de vueltas son de:", promediovuelta); // Imprimo en la consola -promediovuelta-.
