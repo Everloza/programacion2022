@@ -1,4 +1,4 @@
-let codigo: string = prompt("Ingrese la clave: ");
+let codigo: string = String(prompt("Ingrese la clave: "));
 let intento: number = 0;
 let intentorest: number = 2;
 //  forzar el for es una mala practica!!
@@ -8,10 +8,12 @@ for (intento = 0; intento < 2; intento++) {
     console.log("Clave correcta, ingresando al sistema");
     intento = 2;
   } else {
-    codigo = prompt(
-      "La clave es incorrecta, te quedan" +
-        intentorest +
-        "intentos, Ingrese la clave nuevamente: "
+    codigo = String(
+      prompt(
+        "La clave es incorrecta, te quedan" +
+          intentorest +
+          "intentos, Ingrese la clave nuevamente: "
+      )
     );
   }
   intentorest -= 1;
