@@ -88,7 +88,7 @@ let nroMes: number = Number(prompt("Indique el núm de mes que le interesa: "));
 porque el usuario va a ingresar el número de mes empezando desde 1 */
 let indice = nroMes - 1;
 
-console.log("El mes es ", arregloMes[indice]);
+console.log("El mes es " + arregloMes[indice]);
 
 /* Un arreglo tambien se puede definir “por extensión”
 de la siguiente manera:
