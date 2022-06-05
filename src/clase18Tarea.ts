@@ -50,7 +50,7 @@ function ObtenerPosicion(alumno: string): number {
 
 function cargarNotasDeAlumno() {
   for (let indice: number = 0; indice < 2; indice++) {
-    arrayAlumnos[indice] = prompt("Ingrese Alumno: ");
+    arrayAlumnos[indice] = String(prompt("Ingrese Alumno: "));
     arrayNota1[indice] = Number(prompt("Ingrese nota 1: "));
     arrayNota2[indice] = Number(prompt("Ingrese nota 2: "));
     arrayNota3[indice] = Number(prompt("Ingrese nota 3: "));
@@ -58,7 +58,7 @@ function cargarNotasDeAlumno() {
 }
 
 cargarNotasDeAlumno();
-let alumno: string = prompt("Ingrese Alumno");
+let alumno: string = String(prompt("Ingrese Alumno"));
 if (ObtenerPosicion(alumno) === -1) {
   console.log("El alumno no existe");
 } else {

@@ -13,16 +13,16 @@ La salida es: 5, 9, 9, 7, 3, 1
 
 */
 
-let cantidad: number = Number(prompt(`Ingrese la cantidad de números:`));
-let v: number[] = new Array(cantidad);
+let cantidad: number = Number(prompt("Ingrese la cantidad de números:"));
+let vector: number[] = new Array(cantidad);
 let indice: number;
 
 for (indice = 0; indice < cantidad; indice++) {
-  v[indice] = Number(prompt(`Ingrese v[ ${indice} ]: `));
+  vector[indice] = Number(prompt(`Ingrese vector n°[${indice}]: `));
 }
 
 let cadena: string = "";
 for (indice = cantidad - 1; indice >= 0; indice--) {
-  cadena = cadena + v[indice] + " ";
+  cadena = cadena + vector[indice] + " ";
 }
-console.log(cadena);
+console.log("La salida es:", cadena);
