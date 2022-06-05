@@ -14,6 +14,20 @@ function dibujarGuionesN(cantidad: number) {
   }
   console.log(linea);
 }
+function calcularResultado(
+  numero1: number,
+  numero2: number,
+  opcionMenu: number
+): number {
+  let resultado: number;
+
+  if (opcionMenu == 1) {
+    resultado = numero1 + numero2;
+  } else if (opcionMenu == 2) {
+    resultado = numero1 - numero2;
+  }
+  return resultado;
+}
 
 if (opcionMenu === 1) {
   dibujarGuionesN(30);
@@ -24,3 +38,7 @@ if (opcionMenu === 1) {
   console.log("el resultado es: ", numero1 - numero2);
   dibujarGuionesN(30);
 }
+let resultado = calcularResultado(numero1, numero2, opcionMenu);
+dibujarGuionesN(50);
+console.log("el resultado es: ", resultado);
+dibujarGuionesN(50);
