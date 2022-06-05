@@ -1,7 +1,10 @@
-/* Ejercicio – Mayor de Tres
+/* 
+Ejercicio – Mayor de Tres
+
 • Desarrolle un algoritmo que dados tres
 números determine cuál es el mayor de los
 tres. 
+
  */
 let numero1: number = Number(prompt("Ingrese un 1er numero:"));
 let numero2: number = Number(prompt("Ingrese un 2do numero:"));

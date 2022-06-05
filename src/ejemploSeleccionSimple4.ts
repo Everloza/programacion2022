@@ -1,7 +1,10 @@
-/* Estructura de Control - Selección.
+/* 
+Estructura de Control - Selección.
+
 Determine qué Hace el Siguiente Código.
 
 • Dada la edad de una persona informa si es mayor de 18 o no .
+
 */
 
 let e: number = Number(prompt("Introduce la edad: "));

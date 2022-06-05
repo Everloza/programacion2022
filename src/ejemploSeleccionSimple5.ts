@@ -1,4 +1,5 @@
-/* Estructura de Control – Selección Simple
+/* 
+Estructura de Control – Selección Simple
 Ejercicio - Login
 
 • Desarrolle un algoritmo que permita loguearse (registrarse)
@@ -10,6 +11,7 @@ formados sólo por letras.
 sean correctas, comparándolas con lo que el sistema tiene
 registrado para ese usuario. Tenga en cuenta que el sistema
 tiene registrado el usuario: Juan y la clave claveJuan
+
 */
 
 let user: string = String(prompt("Por favor, inserte un nombre de usuario:")); //asigno una variable -user- de tipo string para mostrar en el cuadro de consola.

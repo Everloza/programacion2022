@@ -1,7 +1,9 @@
-/* Selección Múltiple - Ejemplo del archivo clase10Tarea pero en un switch.
+/* 
+Selección Múltiple - Ejemplo del archivo clase10Tarea pero en un switch.
 
 En el switch la secuencia de instrucciones a ejecutar depende de una
 variable numérica: 
+
 */
 
 let medalla: number = Number(prompt("Ingresar el puesto correspondiente:")); // Declaro -medalla- de tipo number al teclado.

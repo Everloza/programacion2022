@@ -5,6 +5,7 @@ Determine qué Hace el Siguiente Código.
 Dados tres números, ingresados por el usuario, el algoritmo se fija
 si el primer número es negativo en cuyo caso muestra el producto
 de los tres números, sino muestra la suma de estos .
+
 */
 
 let no1: number = Number(prompt("Ingrese el primer numero."));

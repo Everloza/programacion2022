@@ -7,6 +7,7 @@ sus compras.
 precio unitario, cantidad y el mes, indicados
 por el usuario, determine si el cliente tiene
 descuento o no.
+
 */
 
 let precioUnitario: number = Number(prompt("Ingrese el precio: "));

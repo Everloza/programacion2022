@@ -1,5 +1,8 @@
-/* 
- Modulo 2 - Estructura de Control - Selección - Ejercicio Mayor a 20 - Código */
+/* Modulo 2 
+
+Estructura de Control - Selección - Ejercicio Mayor a 20 - Código 
+
+ */
 
 // Declaro -nroDeseado- de tipo number y lo escribo al teclado.
 let nroDeseado: number = Number(prompt("Introduce un numero deseado:"));
