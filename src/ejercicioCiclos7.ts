@@ -16,23 +16,23 @@
 
 */
 
-let numero: number = 0;
+let numero: number = Number(0);
 let positivo: number = 0;
 let porcentaje: number = 0;
 
+// Mientras que el numero sea distinto a 0.
 while (numero !== 0) {
-  //mientras que el numero sea distinto a 0
-  numero = Number(prompt("ingrese un numero distinto a 0: ")); //ingreso el numero
-
+  // Ingreso el numero.
+  numero = Number(prompt("ingrese un numero distinto a 0: "));
+  // Pregunto si el numero es positivo.
   if (numero > 0) {
-    //pregunto si el numero es positivo
-    positivo++; //cuenta la cantidad de numeros positivos
+    positivo++; // Cuenta la cantidad de numeros positivos
   }
 
-  numero = Number(prompt("ingresar un numero: ")); //ingresar nuevo numero
+  numero = Number(prompt("ingresar un numero: ")); // Ingreso nuevo numero
+  // Pregunto si el porcentaje es mayor a 0
   if (porcentaje > 0) {
-    //pregunto si el porcentaje es mayor a 0
-    porcentaje = (positivo / numero) * 100; //calculo el porcentaje
+    porcentaje = (positivo / numero) * 100; // Calculo el porcentaje
     console.log("el porcentaje de positivos es: ", porcentaje, positivo);
   }
 }
