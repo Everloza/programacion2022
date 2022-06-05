@@ -14,24 +14,31 @@ La salida es: 1 positivos, 2 negativos y 3 ceros
 
 //Algoritmo TiposNumero
 
+// Defino las variables y cargo los números en el arreglo:
 let cantidad: number = Number(prompt(`Ingrese la cantidad de números: `));
-let v: number[] = new Array(cantidad);
+let vector: number[] = new Array(cantidad);
 let indice: number;
-
 for (indice = 0; indice < cantidad; indice++) {
-  v[indice] = Number(prompt(`Ingrese v[ ${indice} ]: `));
+  vector[indice] = Number(prompt(`Ingrese v[ ${indice} ]: `));
 }
+
+// Defino las variables para llevar la cuenta:
+
+//Cuento los valores >0, <0 e =0
 let numNeg: number = 0;
 let numCero: number = 0;
 let numPos: number = 0;
 
+// Recorro el arreglo y voy contando según corresponda.
 for (indice = 0; indice < cantidad; indice++) {
-  if (v[indice] === 0) {
+  if (vector[indice] === 0) {
     numCero++;
-  } else if (v[indice] > 0) {
+  } else if (vector[indice] > 0) {
     numPos++;
   } else {
     numNeg++;
   }
 }
+
+// Imprimo -numPos-, -numNeg-, -numCero-.
 console.log(`Hay ${numPos} positivos, ${numNeg} negativos, ${numCero} ceros.`);
