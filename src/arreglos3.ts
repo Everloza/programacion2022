@@ -19,7 +19,7 @@ let cantidad: number = Number(prompt(`Ingrese la cantidad de números: `));
 let vector: number[] = new Array(cantidad);
 let indice: number;
 for (indice = 0; indice < cantidad; indice++) {
-  vector[indice] = Number(prompt(`Ingrese v[ ${indice} ]: `));
+  vector[indice] = Number(prompt(`Ingrese vector n°[ ${indice} ]: `));
 }
 
 // Defino las variables para llevar la cuenta:
