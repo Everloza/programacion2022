@@ -18,6 +18,7 @@ La salida es: 1 positivos, 2 negativos y 3 ceros
 let cantidad: number = Number(prompt(`Ingrese la cantidad de números: `));
 let vector: number[] = new Array(cantidad);
 let indice: number;
+
 for (indice = 0; indice < cantidad; indice++) {
   vector[indice] = Number(prompt(`Ingrese vector n°[ ${indice} ]: `));
 }
