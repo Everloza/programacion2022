@@ -25,7 +25,7 @@ function multiplicarVector(
   return acum;
 }
 
-let cantidad: number = prompt("Ingrese cantidad: ");
+let cantidad: number = Number(prompt("Ingrese cantidad: "));
 let v1: number[] = new Array(cantidad);
 let v2: number[] = new Array(cantidad);
 
