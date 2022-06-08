@@ -17,6 +17,24 @@ bancos disponibles. El aula Azul es descartada porque quedan más
 bancos inutilizados que en el aula Verde (6 versus 1).
 
 */
+function obtenerMejorAula(
+  nombresAulas: string[],
+  asientosAulas: number[],
+  largo: number,
+  cantidadInfantes: number
+): number {
+  let indice: number;
+  let indiceMejorAula: number = 0;
+  for (indice = 0; indice < largo; indice++) {
+    if (
+      asientosAulas[indice] >= cantidadInfantes &&
+      asientosAulas[indice] < asientosAulas[indiceMejorAula]
+    ) {
+      indiceMejorAula = indice;
+    }
+  }
+  return coloresAulas[indiceMejorAula];
+}
 
 //... funcionalidad de ingreso de datos ...
 
@@ -38,22 +56,3 @@ console.log(
   "La mejor aula es: ",
   obtenerMejorAula(coloresAulas, capacidadAulas, cantidadAulas, cantidadAlumnos)
 );
-
-function obtenerMejorAula(
-  nombresAulas: string[],
-  asientosAulas: number[],
-  largo: number,
-  cantidadInfantes: number
-): number {
-  let indice: number;
-  let indiceMejorAula: number = 0;
-  for (indice = 0; indice < largo; indice++) {
-    if (
-      asientosAulas[indice] >= cantidadInfantes &&
-      asientosAulas[indice] < asientosAulas[indiceMejorAula]
-    ) {
-      indiceMejorAula = indice;
-    }
-  }
-  return coloresAulas[indiceMejorAula];
-}
