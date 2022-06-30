@@ -21,14 +21,34 @@ let cantidadUni: number[] = new Array(6);
 
 function productosTotal(producto: number[], cantidad: number[]): number {
   let indice: number;
-  let acum: number = 0;
+  let total: number = 0;
   for (indice = 0; indice < cantidad; indice++) {
-    acum = acum + producto[indice] * cantidad[indice];
+    total = total + producto[indice] * cantidad[indice];
   }
-  return acum;
+  return total;
 }
 
 let cantidadTotal: number = Number(prompt("Ingrese cantidad total: "));
 let productosTotal: number = Number(prompt("Ingrese los productos: "));
 let precioUni: number = Number(prompt("Ingrese precio: "));
 let cantidadUni: number = Number(prompt("Ingrese cantidad: "));
+
+switch (true) {
+  case 1000 < productosTotal:
+    console.log("Usted no participa en ningun sorteo");
+    break;
+
+  case 3000 > productosTotal:
+    console.log("Ud. participa de un 0km");
+    break;
+
+  case 3000 < productosTotal > 2000:
+    console.log("Participa por una moto 0km");
+    break;
+
+  case 1000 > productosTotal:
+    console.log("Ud. participa de un Led Tv");
+    break;
+  default:
+    break;
+}
