@@ -15,7 +15,20 @@ moto 0k
 • si compra mas de 1000 pero menos de 2000 participa un tv led
 
 */
+let productosTotal: number[] = new Array(6);
+let precioUni: number[] = new Array(6);
+let cantidadUni: number[] = new Array(6);
 
-function (){
-  
+function productosTotal(producto: number[], cantidad: number[]): number {
+  let indice: number;
+  let acum: number = 0;
+  for (indice = 0; indice < cantidad; indice++) {
+    acum = acum + producto[indice] * cantidad[indice];
+  }
+  return acum;
 }
+
+let cantidadTotal: number = Number(prompt("Ingrese cantidad total: "));
+let productosTotal: number = Number(prompt("Ingrese los productos: "));
+let precioUni: number = Number(prompt("Ingrese precio: "));
+let cantidadUni: number = Number(prompt("Ingrese cantidad: "));
